@@ -142,3 +142,5 @@ xreg_mat <- scale(as.matrix(sapply(confirmed_nm_complete[,colnames(confirmed_nm_
 
 ar_fit <-auto.arima(confirmed_nm_complete$normalized_gr*1e6,xreg=xreg_mat)
 summary(ar_fit)
+
+
